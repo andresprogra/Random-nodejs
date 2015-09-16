@@ -1,6 +1,6 @@
 var basededatos = {
-	usuario: "platzimejorplataforma",
-	password: "andresteamo"
+	usuario: "usuario",
+	password: "contraseñadeusuario"
 };
 console.log("Arrancando Backend Andres Dominguez");
 var express = require("express");
@@ -24,9 +24,3 @@ web.post("/login", function (req, res){
 	}
 	
 });
-web.get("/test", function (req, res){
-	res.send("Buen trabajo, lograste un server web y tu nombre es " + req.query.nombre + "y tu apellido es: " + req.query.apellido);
-});
-//web.get("/andres", function (req, res){
-//	res.send("Andrés es un front-end y un Backend :D");
-//});
